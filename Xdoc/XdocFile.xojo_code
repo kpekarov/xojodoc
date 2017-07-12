@@ -90,8 +90,8 @@ Protected Class XdocFile
 		  Const kEvent = 3
 		  
 		  Dim includePrivate   As Boolean = (1 = Bitwise.BitAnd(App.kIncludePrivate, flags))
-		  Dim includeProtected As Boolean = (1 = Bitwise.BitAnd(App.kIncludeProtected, flags))
-		  Dim includeEvents    As Boolean = (1 = Bitwise.BitAnd(App.kIncludeEvents, flags))
+		  Dim includeProtected As Boolean = (2 = Bitwise.BitAnd(App.kIncludeProtected, flags))
+		  Dim includeEvents    As Boolean = (4 = Bitwise.BitAnd(App.kIncludeEvents, flags))
 		  
 		  Dim tis As TextInputStream = TextInputStream.Open(File)
 		  
