@@ -1,5 +1,5 @@
 Type=Console
-RBProjectVersion=2014.021
+RBProjectVersion=2016.041
 MinIDEVersion=20070100
 Class=App;App.xojo_code;&h3C348627;&h0;false
 BuildSteps=Build Automation;Build Automation.xojo_code;&h1C53CAF8;&h0;false
@@ -41,7 +41,7 @@ WinInternalName=
 WinProductName=
 WinFileDescription=
 AutoIncrementVersionInformation=False
-BuildFlags=&h4100
+BuildFlags=&h1100
 BuildLanguage=&h0
 DebugLanguage=&h0
 Region=
@@ -57,4 +57,7 @@ OSXBundleID=com.cowgar.xojodoc
 DebuggerCommandLine=--include=Atc --output-format asciidoc -f ~/Projects/Xojo/atc/atc.adoc ~/Projects/Xojo/atc/atc.xojo_project
 UseGDIPlus=False
 UseBuildsFolder=True
+CopyRedistNextToWindowsEXE=False
 IsWebProject=False
+MacBuildArchitecture=1
+OptimizationLevel=0
