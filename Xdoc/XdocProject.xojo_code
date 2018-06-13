@@ -75,7 +75,7 @@ Protected Class XdocProject
 		  Wend
 		  
 		  For Each f As XdocFile In Files
-		    If f.ParentId = "" Or f.ParentId = "&h0" Then
+		    If f.ParentId = "" Or f.ParentId = "&h0" or f.parentId = "&h0000000000000000" Then
 		      f.FullName = f.Name
 		      Continue
 		    End If
@@ -102,7 +102,7 @@ Protected Class XdocProject
 	#tag EndMethod
 
 	#tag Method, Flags = &h0, Description = 44657465726D696E65207669736962696C6974792069642066726F6D2061207669736962696C69747920737472696E67
-		 Shared Function VisibilityFor(text As String) As Integer
+		Shared Function VisibilityFor(text As String) As Integer
 		  //
 		  // Takes `""`, `"Private"`, `"Protected"`, `"Public"`, `"Global"` and will return one of:
 		  //
