@@ -120,6 +120,17 @@ Inherits ConsoleApplication
 		End Function
 	#tag EndEvent
 
+	#tag Event
+		Function UnhandledException(error As RuntimeException) As Boolean
+		  dim stack() as string = error.Stack()
+		  for i as integer = 0 to stack.Ubound
+		    print stack(i)
+		  next
+		  
+		  return false
+		End Function
+	#tag EndEvent
+
 
 	#tag Method, Flags = &h21
 		Private Function GetRoot(root As FolderItem, f As XdocFile) As FolderItem
